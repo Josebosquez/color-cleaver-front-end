@@ -10,13 +10,16 @@ const str1 = getInput(2);
 console.log(getInput(1));
 console.log(getInput(2));
 
-//if ((!isValidSecondary (getInput(1))) || (!isValidSecondary (getInput(2))) && 
-  //  (!isValidPrimary(getInput(1)) || (!isValidPrimary(getInput(2)){
-    //console.log("That's not a valid color dude, try again");
-//}
-if (isValidSecondary(str) === true){
-    console.log(colorDeconstructor(str, str1));
+if ((!isValidPrimary(str) === true) &&
+(!isValidPrimary(str1) === true) && 
+(!isValidSecondary(str) === true) &&
+(!isValidSecondary(str1) === true)){
+    console.log("Input a color dude, try again");
 }
-if ((isValidPrimary(str) === true) && (isValidPrimary(str1) === true)){
-    console.log(colorCombinator(str));
+if (isValidSecondary(str) === true){
+    console.log(str + " breaks down into the colors " + colorDeconstructor(str, str1));
+}
+if (isValidPrimary(str) === true && isValidPrimary(str1) === true){
+    console.log(str + " + " + str1 + " = " + colorCombinator(str, str1));
+
 }
