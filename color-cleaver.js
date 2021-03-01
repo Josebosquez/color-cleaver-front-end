@@ -16,13 +16,13 @@ if ((!isValidPrimary(str) === true) &&
 (!isValidSecondary(str1) === true)){
     console.log("Input a color dude, try again");
 }
+
 if (isValidSecondary(str) === true){
     console.log(str + " breaks down into the colors " + colorDeconstructor(str, str1));
+    console.log(str + " is not a primary color.");
 }
+
 if (isValidPrimary(str) === true && isValidPrimary(str1) === true){
     console.log(str + " + " + str1 + " = " + colorCombinator(str, str1));
+    console.log (str + " and " + str1 + " are not secondary colors!")
 } 
-//if ((isValidPrimary(str) === true) && (isValidPrimary(str1) === true) &&
-//(!isValidSecondary(str) === true) && (!isValidSecondary(str1) === true)){
-//    console.log("Only one is a color")
-//}
