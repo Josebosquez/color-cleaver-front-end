@@ -21,5 +21,8 @@ if (isValidSecondary(str) === true){
 }
 if (isValidPrimary(str) === true && isValidPrimary(str1) === true){
     console.log(str + " + " + str1 + " = " + colorCombinator(str, str1));
-
-}
+} 
+//if ((isValidPrimary(str) === true) && (isValidPrimary(str1) === true) &&
+//(!isValidSecondary(str) === true) && (!isValidSecondary(str1) === true)){
+//    console.log("Only one is a color")
+//}
